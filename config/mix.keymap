@@ -66,16 +66,16 @@
         FN {
             display-name = "FN";
             bindings = <
-&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&kp F11  &kp F1  &kp F2     &kp F3     &kp F4     &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans   &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans   &trans
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp UP_ARROW DOWN>;
+                <&encoder_sc SCRL_UP SCRL_DOWN>;
 
             label = "FN";
         };
