@@ -24,6 +24,17 @@
 
             tap-ms = <40>;
         };
+
+        lt2: lt2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT2";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -32,11 +43,11 @@
         BASE {
             display-name = "BASE";
             bindings = <
-&mt ESCAPE DE_CARET  &kp DE_N1  &kp DE_N2  &kp DE_N3     &kp DE_N4     &kp DE_N5  &kp DE_N6    &kp DE_N7     &kp DE_N8      &kp DE_N9   &kp DE_N0                 &mt DELETE DE_SZ
-&kp TAB              &kp DE_Q   &kp DE_W   &kp DE_E      &kp DE_R      &kp DE_T   &kp DE_Z     &kp DE_U      &kp DE_I       &kp DE_O    &kp DE_P                  &mt DE_PLUS DE_U_UMLAUT
-&kp DE_LT            &kp DE_A   &kp DE_S   &kp DE_D      &kp DE_F      &kp DE_G   &kp DE_H     &kp DE_J      &kp DE_K       &kp DE_L    &mt DE_ACUTE DE_O_UMLAUT  &mt DE_HASH DE_A_UMLAUT
-&kp LSHFT            &kp DE_Y   &kp DE_X   &kp DE_C      &kp DE_V      &kp DE_B   &kp DE_N     &kp DE_M      &kp DE_COMMA   &kp DE_DOT  &kp DE_MINUS              &kp RSHFT
-&kp LCTRL            &kp LGUI   &none      &kp LEFT_ALT  &kp DE_SPACE  &mo 1      &lt 2 ENTER  &kp DE_SPACE  &kp BACKSPACE  &none       &mkp RCLK                 &kp RIGHT_ALT
+&mt ESCAPE DE_CARET  &kp DE_N1   &kp DE_N2  &kp DE_N3     &kp DE_N4        &kp DE_N5     &kp DE_N6     &kp DE_N7         &kp DE_N8     &kp DE_N9   &kp DE_N0                 &mt DELETE DE_SZ
+&kp TAB              &kp DE_Q    &kp DE_W   &kp DE_E      &kp DE_R         &kp DE_T      &kp DE_Z      &kp DE_U          &kp DE_I      &kp DE_O    &kp DE_P                  &mt DE_PLUS DE_U_UMLAUT
+&kp DE_LT            &kp DE_A    &kp DE_S   &kp DE_D      &kp DE_F         &kp DE_G      &kp DE_H      &kp DE_J          &kp DE_K      &kp DE_L    &mt DE_ACUTE DE_O_UMLAUT  &mt DE_HASH DE_A_UMLAUT
+&kp LSHFT            &kp DE_Y    &kp DE_X   &kp DE_C      &kp DE_V         &kp DE_B      &kp DE_N      &kp DE_M          &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS              &kp RSHFT
+&kp LCTRL            &kp C_MUTE  &none      &kp LEFT_ALT  &lt2 1 LEFT_WIN  &kp DE_SPACE  &kp DE_SPACE  &lt2 2 BACKSPACE  &kp ENTER     &none       &mkp RCLK                 &kp RIGHT_ALT
             >;
 
             sensor-bindings =
