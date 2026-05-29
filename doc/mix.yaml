@@ -50,14 +50,14 @@ layers:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))
   - RSHFT
   - LCTRL
-  - LGUI
+  - MUTE
   - ''
   - LEFT ALT
+  - {t: LEFT WIN, h: FNNAV}
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SPACEBAR))
-  - FNNAV
-  - {t: ENTER, h: NUM}
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SPACEBAR))
-  - BACKSPACE
+  - {t: BACKSPACE, h: NUM}
+  - ENTER
   - ''
   - '&mkp RCLK'
   - RIGHT ALT
@@ -114,8 +114,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,8 +177,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -236,10 +236,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
